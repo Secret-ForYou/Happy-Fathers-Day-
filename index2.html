@@ -20,21 +20,11 @@
         <a href="index.html"><button>Kembali ke halaman utama</button></a>
     </div>
 
-    <audio autoplay loop>
-        <source src="https://FeelDream-Onnight.repl.co/TheBestDay.mp3" type="audio/mp3">
-    </audio>
-
-    <audio id="myAudio" autoplay loop muted>
-        <source src="https://FeelDream-Onnight.repl.co/TheBestDay.mp3" type="audio/mp3">
+    <!-- Audio dengan raw URL GitHub -->
+    <audio id="myAudio" loop>
+        <source src="https://raw.githubusercontent.com/Secret-ForYou/Happy-Fathers-Day-/main/TheBestDay.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-    
-    <script>
-        window.onload = function() {
-            var audio = document.getElementById("myAudio");
-            audio.muted = false;  // Mengaktifkan suara setelah halaman dimuat
-        };
-    </script>
 
     <script src="script.js"></script>
 </body>
