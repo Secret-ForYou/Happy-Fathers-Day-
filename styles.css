@@ -1,0 +1,83 @@
+/* Reset beberapa pengaturan standar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background video */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar video memenuhi layar tanpa merusak aspek rasio */
+    z-index: -1; /* Video berada di bawah konten lainnya */
+}
+
+/* Background dan pengaturan umum */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Mengubah warna teks menjadi putih agar terlihat jelas di atas video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Menambahkan overlay agar teks lebih mudah dibaca */
+}
+
+/* Container utama */
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparan hitam untuk kontras dengan video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Header */
+h1 {
+    font-size: 36px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+/* Pesan utama */
+#message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Tombol */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Efek hover untuk tombol */
+button:hover {
+    background-color: #ff4f3e;
+}
+
+/* Pesan spesial yang tersembunyi */
+#specialMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50;
+}
+
+/* Untuk menyembunyikan elemen */
+.hidden {
+    display: none;
+}
