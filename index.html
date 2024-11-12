@@ -15,32 +15,24 @@
     <div class="container">
         <h1>🎉 Selamat Hari Ayah! 🎉</h1>
         <p id="message">Terima kasih atas segala cinta dan pengorbananmu, Papi</p>
-        <p id="message">Quozun Sayang Papi,  sehat-sehat ya papi sampai Quozun besar dan sukses</p>
+        <p id="message">Quozun Sayang Papi, sehat-sehat ya papi sampai Quozun besar dan sukses</p>
         <button id="changeMessageBtn">Klik untuk memberi pesan spesial</button>
         
         <div id="specialMessage" class="hidden">
             <p>Papi adalah pahlawan dalam hidupku. Terima kasih telah selalu ada untukku!</p>
         </div>
 
-        <!-- Tombol untuk menuju halaman kedua (index2.html) -->
         <button id="goToSecondPageBtn">Klik untuk ke halaman kedua</button>
     </div>
 
-    <audio autoplay loop>
-        <source src="https://FeelDream-Onnight.repl.co/TheBestDay.mp3" type="audio/mp3">
-    </audio>    
-
-    <audio id="myAudio" autoplay loop muted>
-        <source src="https://FeelDream-Onnight.repl.co/TheBestDay.mp3" type="audio/mp3">
+    <!-- Audio dengan raw URL GitHub -->
+    <audio id="myAudio" loop>
+        <source src="https://raw.githubusercontent.com/Secret-ForYou/Happy-Fathers-Day-/main/TheBestDay.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-    
-    <script>
-        window.onload = function() {
-            var audio = document.getElementById("myAudio");
-            audio.muted = false;  // Mengaktifkan suara setelah halaman dimuat
-        };
-    </script>    
+
+    <!-- Tombol untuk interaksi audio -->
+    <button id="playAudioBtn">Klik untuk Memulai Musik</button>
 
     <script src="script.js"></script>
 </body>
